@@ -1,0 +1,48 @@
+[
+  {
+    "id": "post-001",
+    "date": "2026-11-14",
+    "topic": "risk",
+    "topic_label": "Credit & Financial Risk",
+    "read_time": "5 MIN READ",
+    "title": "Evaluating Corporate Leverage Ratios, Covenant Triggers & Counterparty Stress Testing",
+    "summary": "A practical banking risk framework for evaluating corporate leverage, liquidity buffers, and counterparty exposure under macroeconomic volatility.",
+    "architecture_flow": "Financial Statements -> Ratio Analysis (D/E, Current, ICR) -> Stress Testing -> Credit Risk Tier",
+    "sections": [
+      {
+        "heading": "The Core Pillars of Credit Underwriting",
+        "body": "Assessing leverage, liquidity, and profitability provides a baseline, but rigorous credit underwriting requires dynamic scenario modeling under adverse shocks."
+      },
+      {
+        "heading": "Monitoring Covenants & Early Warning Indicators",
+        "body": "Tracking interest coverage and cash flow conversion cycles flags potential distress well before formal covenant breaches occur."
+      },
+      {
+        "heading": "Audit-Ready Documentation & Regulatory QC",
+        "body": "Maintaining pristine documentation trails ensures full compliance with institutional risk frameworks and supervisory standards."
+      }
+    ],
+    "takeaway": "Combining quantitative ratio thresholds with qualitative governance safeguards institutional loan portfolios against unexpected defaults."
+  },
+  {
+    "id": "post-002",
+    "date": "2026-11-13",
+    "topic": "econometrics",
+    "topic_label": "Applied Econometrics",
+    "read_time": "6 MIN READ",
+    "title": "Panel Data Regression & Policy Evaluation: Overcoming Omitted Variable Bias",
+    "summary": "How fixed-effects panel estimation and stationarity testing in R and Stata isolate true economic policy impacts from macro time trends.",
+    "architecture_flow": "Panel Dataset -> ADF Stationarity Test -> First Differencing -> Fixed Effects (Entity/Time) -> Elasticity Estimate",
+    "sections": [
+      {
+        "heading": "Stationarity and Unit Root Diagnostics",
+        "body": "Running Augmented Dickey-Fuller tests prevents spurious regressions when analyzing multi-year macroeconomic time series."
+      },
+      {
+        "heading": "Entity and Time Fixed Effects",
+        "body": "Including unit-specific and temporal dummy controls removes unobserved heterogeneity and unmeasured confounding variables."
+      }
+    ],
+    "takeaway": "Proper econometric specification is essential to distinguish causal policy effectiveness from coincidental macro trends."
+  }
+]

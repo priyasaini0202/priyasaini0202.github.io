@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanka Saini | BITS Pilani Economics & Management • Banking, Risk & Financial Analytics</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <meta name="description" content="Priyanka Saini — M.Sc. (Hons.) Economics & Minor in Management from BITS Pilani. Advisor at National Australia Bank, WILP Learning Facilitator, and former Deutsche Bank Risk Analyst Intern." />
+  <meta name="keywords" content="Priyanka Saini, Priyanka Saini BITS Pilani, National Australia Bank Advisor, Deutsche Bank Risk Analyst, Economics, Financial Analytics, Econometrics, Managerial Accounting, Credit Risk" />
+  <meta name="author" content="Priyanka Saini" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Priyanka Saini — Economics, Finance & Risk Analytics" />
+  <meta property="og:title" content="Priyanka Saini | Economics, Finance & Risk Analytics (BITS Pilani)" />
+  <meta property="og:description" content="M.Sc. (Hons.) Economics & Minor in Management (BITS Pilani). Banking Operations & Trade Lifecycle Advisor at NAB, WILP Facilitator, and Credit Risk Analyst." />
+  <meta property="og:image" content="IMG_Priyanka_Saini.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Priyanka Saini",
+    "image": "IMG_Priyanka_Saini.jpg",
+    "jobTitle": "Advisor at National Australia Bank & Learning Facilitator at WILP, BITS Pilani",
+    "email": "mailto:priyasaini202004@gmail.com",
+    "telephone": "+91-9602591005",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Birla Institute of Technology and Science, Pilani (BITS Pilani)"
+    },
+    "knowsAbout": [
+      "Economics",
+      "Credit Risk Analysis",
+      "Business and Private Banking",
+      "Financial Analytics",
+      "Applied Econometrics",
+      "Managerial Accounting",
+      "Derivatives and Risk Management"
+    ],
+    "sameAs": [
+      "https://in.linkedin.com/in/priyanka-saini-2b8219195"
+    ]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <canvas id="neural-canvas"></canvas>
+  <div id="scroll-progress"></div>
+  <div id="toast"></div>
+
+  <nav>
+    <a href="index.html" class="logo">&lt;<span>Priyanka.EconFin</span>/&gt;</a>
+    <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Toggle Menu">☰</button>
+    <div class="nav-links">
+      <a href="tutoring.html">🎓 Mentoring</a>
+      <a href="#services">📊 Advisory</a>
+      <a href="labs.html">📈 Econ Labs</a>
+      <a href="#projects">🗂️ Research</a>
+      <a href="blog.html">📖 Blog</a>
+      <a href="capabilities.html">📄 Profile Deck</a>
+      <a href="#contact" class="nav-cta">💬 Connect</a>
+      <button type="button" id="themeToggle" class="theme-btn" onclick="toggleTheme()">☀️ Light</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header>
+      <div>
+        <div class="status-pill"><span class="pulse-dot"></span><span>ADVISOR @ NATIONAL AUSTRALIA BANK • BITS PILANI</span></div>
+        <h1>Hi, I'm <span class="gradient-text">Priyanka Saini</span></h1>
+        <div class="typing-wrapper"><span id="typed-text"></span></div>
+        <p class="hero-desc">
+          I hold an <strong>M.Sc. (Hons.) in Economics</strong> and a <strong>Minor in Management from BITS Pilani</strong>. Currently serving as an <strong>Advisor at National Australia Bank</strong> and <strong>Learning Facilitator at WILP, BITS Pilani</strong>, I bridge institutional banking operations, credit risk analytics, and empirical econometrics.
+        </p>
+        <div class="cta-group">
+          <a href="https://in.linkedin.com/in/priyanka-saini-2b8219195" target="_blank" rel="noopener" class="btn btn-primary">💼 Connect on LinkedIn ↗</a>
+          <a href="labs.html" class="btn btn-purple">📈 Interactive Finance & Econ Labs</a>
+          <a href="capabilities.html" class="btn btn-glass">Executive Summary →</a>
+          <a href="resume_Priyanka.pdf" target="_blank" rel="noopener" class="btn btn-glass">Resume.pdf ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-showcase">
+          <div class="avatar-ring"><img src="IMG_Priyanka_Saini.jpg" alt="Priyanka Saini — Economics, Finance & Banking Advisor" loading="lazy" /></div>
+          <div>
+            <h3>Priyanka Saini</h3>
+            <span class="uni-badge">🎓 M.Sc. (Hons.) Economics & Mgmt Minor • BITS Pilani</span>
+            <span class="loc-text">🏦 National Australia Bank • Deutsche Bank Alumna</span>
+          </div>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+            <span style="color:var(--muted); font-size:0.75rem;">priyanka@econ-finance-desk: ~</span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <div><span style="color:#10b981;">➜</span> Rscript profile_summary.R</div>
+            <div class="cmd-output">
+              <div>[✓] Current: Advisor @ National Australia Bank (Apr 2026–Present)</div>
+              <div>[✓] Academia: Learning Facilitator @ WILP, BITS Pilani (Managerial Accounting)</div>
+              <div>[✓] Past: Risk Analyst Intern @ Deutsche Bank | Financial Analytics @ Grasim</div>
+            </div>
+          </div>
+          <div class="terminal-actions">
+            <button class="term-chip" onclick="runCmd('stack')">./analytics_stack.sh</button>
+            <button class="term-chip" onclick="runCmd('risk')">./risk_audit.sh</button>
+            <button class="term-chip" onclick="runCmd('impact')">./credentials.sh</button>
+            <button class="term-chip" onclick="runCmd('contact')">./connect.sh</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="metrics-grid">
+      <div class="card metric-card"><div class="metric-num">BITS Pilani</div><div class="metric-label">M.Sc. (Hons.) Economics + Mgmt Minor</div></div>
+      <div class="card metric-card"><div class="metric-num">NAB & DB</div><div class="metric-label">Banking Operations & Credit Risk</div></div>
+      <div class="card metric-card"><div class="metric-num">150+</div><div class="metric-label">Students Mentored via Nirmaan & WILP</div></div>
+      <div class="card metric-card"><div class="metric-num">6 Tools</div><div class="metric-label">Excel • SQL • Python • R • Stata • PPT</div></div>
+    </div>
+
+    <div class="card" style="margin-bottom:1rem; border-color:var(--math-gold); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+      <div style="max-width:760px;">
+        <span class="section-tag" style="margin-bottom:0.2rem;">✨ ECONOMICS & FINANCE INSIGHT (TIP: HOVER OVER BACKGROUND SHAPES!)</span>
+        <h3 id="funFactTitle" style="margin-bottom:0.25rem;">📊 The Rule of 72 in Finance</h3>
+        <p id="funFactText" style="color:var(--muted); margin:0;">Divide 72 by your annual interest rate to estimate how many years it takes for an investment to double (e.g., at 8% return, 72 ÷ 8 = 9 years)!</p>
+      </div>
+      <button type="button" class="btn btn-purple btn-sm" onclick="nextEconFunFact()">Next Insight 🎲</button>
+    </div>
+
+    <section id="tutoring">
+      <span class="section-tag">ACADEMIC_MENTORING • WILP & NIRMAAN EXPERIENCE</span>
+      <h2>1-on-1 Mentoring: Economics, Managerial Accounting & Data Tools</h2>
+      <p style="color:var(--muted); max-width:800px; margin:-0.75rem 0 1.5rem; font-size:0.98rem;">
+        Drawing on experience as a <strong>WILP Learning Facilitator at BITS Pilani</strong> and mentor to <strong>150+ students</strong> through Nirmaan and ACC, I offer structured 1-on-1 guidance in Economics, Finance, Managerial Accounting, and quantitative tools.
+      </p>
+
+      <div class="grid-3" style="margin-bottom:1.5rem;">
+        <div class="card">
+          <span class="section-tag">TRACK 01 • ECONOMICS</span>
+          <h3 style="margin:0.35rem 0 0.55rem;">📈 Micro, Macro & Econometrics</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.8rem;">Market equilibrium, public policy evaluation, international economics, and applied econometric modeling using R and Stata.</p>
+          <div class="tags"><span class="tag">Class 11–12 & UG</span><span class="tag">Panel & Time-Series</span><span class="tag">Policy Analysis</span></div>
+        </div>
+
+        <div class="card">
+          <span class="section-tag">TRACK 02 • FINANCE & ACCOUNTING</span>
+          <h3 style="margin:0.35rem 0 0.55rem;">🏦 Managerial Accounting & Valuation</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.8rem;">Financial statement analysis, credit risk ratios, derivatives fundamentals, and corporate valuation concepts broken down step by step.</p>
+          <div class="tags"><span class="tag">Managerial Accounting</span><span class="tag">Credit Risk Ratios</span><span class="tag">Derivatives</span></div>
+        </div>
+
+        <div class="card">
+          <span class="section-tag">TRACK 03 • QUANTITATIVE TOOLS</span>
+          <h3 style="margin:0.35rem 0 0.55rem;">💻 Excel, SQL, R & Stata</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.8rem;">Hands-on financial modeling in Excel, structured database querying in SQL, and empirical statistical regression in R and Stata.</p>
+          <div class="tags"><span class="tag">Financial Excel</span><span class="tag">SQL Queries</span><span class="tag">R & Stata</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="border-color:var(--accent-green);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.85rem;">
+          <div>
+            <span class="section-tag" style="margin-bottom:0.2rem;">STUDENT_&_LEARNER_PLANNER</span>
+            <h3 style="margin:0;">1-on-1 Mentoring Fee & Trial Session Planner</h3>
+          </div>
+          <div style="display:flex; gap:0.4rem;">
+            <button type="button" class="filter-btn active" id="tutInrBtn" onclick="setTutorCurrency('INR')">INR (₹)</button>
+            <button type="button" class="filter-btn" id="tutUsdBtn" onclick="setTutorCurrency('USD')">USD ($)</button>
+          </div>
+        </div>
+
+        <div class="grid-2" style="align-items:start;">
+          <div>
+            <label style="display:block; font-family:'Fira Code',monospace; font-size:0.8rem; color:var(--muted); margin-bottom:0.35rem;">1. Select Learning Level:</label>
+            <select id="tutGrade" class="pg-input" onchange="updateTutorEstimate()">
+              <option value="school">Senior Secondary Economics & Commerce (Classes 11–12)</option>
+              <option value="ug" selected>Undergraduate Economics, Finance & Statistics</option>
+              <option value="wilp">Managerial Accounting, Corporate Finance & Econometrics</option>
+              <option value="tools">Applied Excel, SQL, R Programming & Stata Workshop</option>
+            </select>
+            <label style="display:block; font-family:'Fira Code',monospace; font-size:0.8rem; color:var(--muted); margin:0.4rem 0;">2. Focus Subjects:</label>
+            <div style="display:flex; flex-wrap:wrap; gap:0.85rem; font-size:0.88rem; color:var(--text);">
+              <label style="cursor:pointer;"><input type="checkbox" id="subMath" checked onchange="updateTutorEstimate()" /> Economics & Econometrics</label>
+              <label style="cursor:pointer;"><input type="checkbox" id="subSci" onchange="updateTutorEstimate()" /> Accounting & Finance</label>
+              <label style="cursor:pointer;"><input type="checkbox" id="subEng" onchange="updateTutorEstimate()" /> Excel / SQL / R / Stata</label>
+            </div>
+          </div>
+
+          <div class="trace-box" style="margin:0; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="color:var(--muted); font-size:0.78rem;">ESTIMATED 1-ON-1 MENTORING RATE</div>
+              <div id="tutRateDisplay" style="font-size:1.45rem; font-weight:800; color:var(--accent-green); margin:0.3rem 0;">₹1,000 – ₹1,500 / hour</div>
+              <div id="tutPackDisplay" style="font-size:0.84rem; color:var(--accent); margin-bottom:0.45rem;">Monthly 8-Session Pack: ₹7,200 – ₹10,800 (Save 10%)</div>
+              <div style="font-size:0.8rem; color:var(--muted);">Includes: Free 20-min diagnostic session, structured concept notes, and problem-set walkthroughs.</div>
+            </div>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.9rem;">
+              <button type="button" class="btn btn-primary btn-sm" onclick="applyTutorToContact()">Request Free Trial Session ↓</button>
+              <a href="tutoring.html" class="btn btn-glass btn-sm">View Full Mentoring Page →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <span class="section-tag">01. CORE_CAPABILITIES_&_ADVISORY</span>
+      <h2>Domains of Expertise</h2>
+      <p style="color:var(--muted); max-width:780px; margin:-0.75rem 0 1.5rem; font-size:0.95rem;">
+        Combining institutional banking operations, credit underwriting rigor, and empirical economic research.
+      </p>
+      <div class="grid-3" style="margin-bottom:1.5rem;">
+        <div class="card">
+          <span class="section-tag">DOMAIN 01 • BANKING & RISK</span>
+          <h3 style="margin:0.35rem 0 0.6rem;">Credit Risk & Trade Lifecycle</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.85rem;">Financial statement evaluation (leverage, liquidity, profitability), counterparty risk assessment, Webobs settlement coordination, and strict regulatory QC.</p>
+          <div class="tags"><span class="tag">Credit Underwriting</span><span class="tag">Trade Lifecycle</span><span class="tag">Compliance QC</span></div>
+        </div>
+
+        <div class="card">
+          <span class="section-tag">DOMAIN 02 • ECONOMETRICS</span>
+          <h3 style="margin:0.35rem 0 0.6rem;">Policy & Market Econometrics</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.85rem;">Panel data modeling, time-series forecasting, global value chain (GVC) sustainability mapping, and public policy impact assessment in R, Stata, and Python.</p>
+          <div class="tags"><span class="tag">R & Stata</span><span class="tag">Panel & Time-Series</span><span class="tag">ESG & GVC Risk</span></div>
+        </div>
+
+        <div class="card">
+          <span class="section-tag">DOMAIN 03 • FINANCIAL ANALYTICS</span>
+          <h3 style="margin:0.35rem 0 0.6rem;">Forecasting & Management Reporting</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin-bottom:0.85rem;">SQL data extraction, historical financial trend analysis, variance diagnostics, and executive reporting dashboards in Excel and PowerPoint.</p>
+          <div class="tags"><span class="tag">Excel & SQL</span><span class="tag">Financial Forecasting</span><span class="tag">Executive Reporting</span></div>
+        </div>
+      </div>
+
+      <div class="card" id="sprint-estimator" style="margin-bottom:1.5rem; border-color:var(--accent);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.85rem;">
+          <div>
+            <span class="section-tag" style="margin-bottom:0.2rem;">INTERACTIVE_PROJECT_&_RESEARCH_ESTIMATOR</span>
+            <h3 style="margin:0;">Analytical Project Timeline & Scope Planner</h3>
+          </div>
+          <div style="display:flex; gap:0.4rem;">
+            <button type="button" class="filter-btn active" id="currInrBtn" onclick="setEstimatorCurrency('INR')">INR (₹)</button>
+            <button type="button" class="filter-btn" id="currUsdBtn" onclick="setEstimatorCurrency('USD')">USD ($)</button>
+          </div>
+        </div>
+        <div class="grid-2" style="align-items:start;">
+          <div>
+            <label style="display:block; font-family:'Fira Code',monospace; font-size:0.8rem; color:var(--muted); margin-bottom:0.35rem;">1. Select Analytical Track:</label>
+            <select id="estTrack" class="pg-input" onchange="updateSprintEstimate()">
+              <option value="credit">Sprint 01: Corporate Credit Risk & Financial Statement Audit</option>
+              <option value="econ">Sprint 02: Econometric Policy & Panel Data Modeling (R/Stata)</option>
+              <option value="finmodel">Sprint 03: Financial Forecasting & SQL/Excel Variance Dashboard</option>
+              <option value="retainer">Monthly Economic & Financial Analytics Advisory</option>
+            </select>
+            <label style="display:block; font-family:'Fira Code',monospace; font-size:0.8rem; color:var(--muted); margin:0.4rem 0;">2. Optional Deliverable Add-Ons:</label>
+            <div style="display:flex; flex-direction:column; gap:0.45rem; font-size:0.86rem; color:var(--text);">
+              <label style="cursor:pointer;"><input type="checkbox" id="addonEval" onchange="updateSprintEstimate()" /> Macro Sensitivity & Stress-Test Annex (+2 days)</label>
+              <label style="cursor:pointer;"><input type="checkbox" id="addonDocker" onchange="updateSprintEstimate()" /> Automated SQL + Excel Reporting Template (+2 days)</label>
+              <label style="cursor:pointer;"><input type="checkbox" id="addonUi" onchange="updateSprintEstimate()" /> Board-Ready Executive Presentation Deck (+2 days)</label>
+            </div>
+          </div>
+          <div class="trace-box" style="margin:0; display:flex; flex-direction:column; justify-content:space-between; min-height:205px;">
+            <div>
+              <div style="color:var(--muted); font-size:0.78rem;">ESTIMATED TIMELINE & SCOPE</div>
+              <div id="estPriceDisplay" style="font-size:1.55rem; font-weight:800; color:var(--accent); margin:0.35rem 0;">₹40,000 – ₹75,000</div>
+              <div id="estTimeDisplay" style="font-size:0.86rem; color:var(--accent-green); margin-bottom:0.55rem;">Estimated Timeline: 5–8 Business Days</div>
+              <div style="font-size:0.8rem; color:var(--muted);">Includes: Clean R/Python/SQL scripts, audit-ready Excel workbooks & executive summary brief.</div>
+            </div>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;">
+              <button type="button" class="btn btn-primary btn-sm" onclick="applyEstimateToContact()">Pre-Fill Inquiry Brief ↓</button>
+              <a href="capabilities.html" class="btn btn-glass btn-sm">View Profile Deck →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-blogs">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem; margin-bottom:1.25rem;">
+        <div>
+          <span class="section-tag">02. ECONOMICS_&_FINANCE_NOTES</span>
+          <h2 style="margin-bottom:0;">Featured Articles & Research Briefs</h2>
+        </div>
+        <div style="display:flex; gap:0.5rem;">
+          <a href="rss.xml" target="_blank" class="btn btn-glass btn-sm">RSS Feed ↗</a>
+          <a href="blog.html" class="btn btn-primary btn-sm">Explore All Articles →</a>
+        </div>
+      </div>
+      <div class="grid-3" id="featured-blogs-grid"></div>
+    </section>
+
+    <section id="interactive-labs-cta" style="padding: 2rem 0;">
+      <div class="card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; border-color: var(--accent);">
+        <div>
+          <span class="section-tag">INTERACTIVE_FINANCE_&_ECONOMETRICS_LABS</span>
+          <h3 style="margin:0.25rem 0;">Test Credit Risk Scoring, Policy Elasticity & Derivatives Payoffs</h3>
+          <p style="color:var(--muted); font-size:0.9rem; margin:0;">Explore interactive financial ratio calculators, supply-demand policy shifters, and option payoff visualizers.</p>
+        </div>
+        <a href="labs.html" class="btn btn-primary">Open Interactive Labs →</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <span class="section-tag">03. EMPIRICAL_RESEARCH_&_PROJECTS</span>
+      <h2>Research & Analytical Projects</h2>
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterItems('project-card', 'all', this)">All Projects</button>
+        <button class="filter-btn" onclick="filterItems('project-card', 'econ', this)">Econometrics & Labor</button>
+        <button class="filter-btn" onclick="filterItems('project-card', 'finance', this)">Global Value Chains & ESG</button>
+        <button class="filter-btn" onclick="filterItems('project-card', 'policy', this)">Public Policy & Governance</button>
+      </div>
+      <div class="grid-3" id="projects-grid"></div>
+    </section>
+
+    <section id="testimonials">
+      <span class="section-tag">04. MENTOR_&_COLLEAGUE_FEEDBACK</span>
+      <h2>Endorsements</h2>
+      <div class="grid-3" id="testimonials-grid"></div>
+    </section>
+
+    <section id="experience">
+      <span class="section-tag">05. CAREER_TRACK_RECORD_&_EDUCATION</span>
+      <h2>Experience & Education</h2>
+      <div class="timeline">
+        <div class="card">
+          <div class="item-header"><div><span class="item-title">Advisor</span> • <span class="item-company">National Australia Bank</span></div><span class="item-date">Apr 2026 – Present</span></div>
+          <ul class="item-list">
+            <li>Manage documentation, risk mitigation, and trade lifecycles for Business and Private Banking.</li>
+            <li>Coordinate Webobs settlement creation to ensure timely transaction realization and smooth workflows.</li>
+            <li>Conduct rigorous quality checks (QC) on high-value financial documents to ensure compliance, and generate operational reports for senior-level transactions.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-header"><div><span class="item-title">Learning Facilitator</span> • <span class="item-company">WILP, BITS Pilani</span></div><span class="item-date">May 2026 – Present</span></div>
+          <ul class="item-list">
+            <li>Facilitated academic delivery and evaluated examinations for the Managerial Accounting course.</li>
+            <li>Coordinated with the BITS technical team to proctor examinations via BITS App across multiple cities and served as Super Proctor on the Mercer Mettl platform.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-header"><div><span class="item-title">Risk Analyst Intern</span> • <span class="item-company">Deutsche Bank India</span></div><span class="item-date">Jan 2025 – Jun 2025</span></div>
+          <ul class="item-list">
+            <li>Analyzed credit risk by evaluating leverage, liquidity, profitability, and financial statements.</li>
+            <li>Assessed internal policies, counterparty risk, and macro indicators to back credit decisions, preparing audit-ready credit reports and monitoring market volatility.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-header"><div><span class="item-title">Financial Analytics Intern</span> • <span class="item-company">Grasim Industries</span></div><span class="item-date">May 2023 – Jul 2023</span></div>
+          <ul class="item-list">
+            <li>Utilized Excel and SQL to perform financial analysis for forecasting, management reporting, and historical trend identification.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="item-header"><div><span class="item-title">M.Sc. (Hons.) Economics & Minor Degree in Management</span> • <span class="item-company">BITS Pilani (Pilani Campus)</span></div><span class="item-date">Graduated 2025 • CGPA: 6.81</span></div>
+          <p style="color:var(--muted); font-size:0.92rem;">Class XII (96%, 2021) & Class X (95%, 2019) — Birla Balika Vidyapeeth, Pilani.</p>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:1.5rem;">
+        <div class="card">
+          <span class="section-tag">LEADERSHIP & CAMPUS IMPACT</span>
+          <h3 style="margin-bottom:0.65rem;">Positions of Responsibility</h3>
+          <ul class="item-list">
+            <li><strong>Utkarsh Volunteer — Nirmaan (BITS Pilani) (Jan 2022 – May 2022):</strong> Supported scholarship initiatives, led academic sessions for disadvantaged students, and mentored over 150 students on academic progress and career awareness.</li>
+            <li><strong>Student Volunteer — ACC (BITS Pilani) (Nov 2021 – Jul 2025):</strong> Provided academic mentoring to peers and streamlined faculty-student communication.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="section-tag">BITS PILANI CURRICULUM</span>
+          <h3 style="margin-bottom:0.65rem;">Key Electives & Technical Stack</h3>
+          <div class="tags" style="margin-top:0;">
+            <span class="tag">Econometric Methods</span>
+            <span class="tag">Derivatives & Risk Mgmt</span>
+            <span class="tag">Security Analysis & Portfolio Mgmt</span>
+            <span class="tag">Business Analysis & Valuation</span>
+            <span class="tag">Money, Banking & Financial Markets</span>
+            <span class="tag">Applied Econometrics</span>
+            <span class="tag">Excel • SQL • Python • R • Stata</span>
+          </div>
+          <div style="margin-top:1rem;">
+            <button type="button" class="btn btn-glass btn-sm" onclick="toggleCommandPalette()">⌨️ Open Quick Command Palette (Ctrl+K)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <span class="section-tag">06. CONTACT_&_CONNECT</span>
+      <h2>Get in Touch</h2>
+      <p style="color:var(--muted); max-width:760px; margin:-0.75rem 0 1.5rem; font-size:0.95rem;">
+        Reach out for roles in banking, risk analytics, economic research, or academic mentoring in Economics and Finance.
+      </p>
+
+      <div class="grid-3" style="margin-bottom:1.5rem;">
+        <div class="card">
+          <span class="section-tag">PROFESSIONAL NETWORK</span>
+          <h3 style="margin-bottom:0.65rem;">LinkedIn & Resume</h3>
+          <div class="cta-group" style="flex-direction:column; align-items:stretch;">
+            <a href="https://in.linkedin.com/in/priyanka-saini-2b8219195" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="justify-content:center;">💼 LinkedIn — Priyanka Saini ↗</a>
+            <a href="resume_Priyanka.pdf" target="_blank" rel="noopener" class="btn btn-purple btn-sm" style="justify-content:center;">📄 Download Resume PDF ↓</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="section-tag">DIRECT CONTACT</span>
+          <h3 style="margin-bottom:0.65rem;">Email & Phone</h3>
+          <div class="cta-group" style="flex-direction:column; align-items:stretch;">
+            <button type="button" onclick="copyEmail()" class="btn btn-glass btn-sm" style="justify-content:center;">✉️ priyasaini202004@gmail.com</button>
+            <button type="button" onclick="copyPhone()" class="btn btn-glass btn-sm" style="justify-content:center;">📞 +91 9602591005</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="section-tag">EXPLORE MORE</span>
+          <h3 style="margin-bottom:0.65rem;">Labs, Blog & Summary</h3>
+          <div class="cta-group" style="flex-direction:column; align-items:stretch;">
+            <a href="labs.html" class="btn btn-glass btn-sm" style="justify-content:center;">📈 Interactive Econ & Risk Labs →</a>
+            <a href="capabilities.html" class="btn btn-glass btn-sm" style="justify-content:center;">📋 1-Page Executive Summary →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem;">Areas of Collaboration</h3>
+          <ul class="item-list" style="margin-bottom:1.1rem;">
+            <li>Credit risk evaluation, financial statement modeling, and banking operations</li>
+            <li>Empirical econometric analysis, ESG value chain research, and policy evaluation</li>
+            <li>1-on-1 mentoring in Economics, Managerial Accounting, Excel, SQL, R, and Stata</li>
+          </ul>
+          <div class="trace-box" style="margin:0;">
+            <div style="color:var(--accent); font-weight:700; margin-bottom:0.35rem;">Direct Contact Details</div>
+            <div>Email: <a href="mailto:priyasaini202004@gmail.com" style="color:var(--text);">priyasaini202004@gmail.com</a></div>
+            <div>Phone / WhatsApp: <a href="tel:+919602591005" style="color:var(--text);">+91 9602591005</a></div>
+            <div>LinkedIn: <a href="https://in.linkedin.com/in/priyanka-saini-2b8219195" target="_blank" rel="noopener" style="color:var(--text);">in.linkedin.com/in/priyanka-saini-2b8219195</a></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:0.75rem;">Send a Direct Message</h3>
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <input type="text" id="senderName" class="pg-input" placeholder="Your Name & Organization" required />
+            <input type="email" id="senderEmail" class="pg-input" placeholder="Your Email Address" required />
+            <textarea id="senderMsg" class="pg-textarea" rows="4" placeholder="Write your message regarding banking/risk roles, research, or mentoring..." required></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Email to Priyanka 🚀</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="projectModal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModalBtn()">✕</button>
+      <span class="section-tag" id="modalTag"></span>
+      <h3 id="modalTitle" style="font-size:1.35rem; margin-bottom:0.5rem;"></h3>
+      <div class="trace-box" id="modalArch" style="color:var(--accent);"></div>
+      <div id="modalDesc" style="color:var(--muted); font-size:0.94rem; margin:1rem 0 1.25rem;"></div>
+      <a id="modalRepoLink" href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Open ↗</a>
+    </div>
+  </div>
+
+  <footer>
+    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; margin-bottom:0.75rem;">
+      <a href="https://in.linkedin.com/in/priyanka-saini-2b8219195" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">LinkedIn</a>
+      <a href="resume_Priyanka.pdf" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">Resume PDF</a>
+      <a href="labs.html" style="color:var(--accent); text-decoration:none;">Econ & Risk Labs</a>
+      <a href="blog.html" style="color:var(--accent); text-decoration:none;">Blog</a>
+      <a href="mailto:priyasaini202004@gmail.com" style="color:var(--accent); text-decoration:none;">priyasaini202004@gmail.com</a>
+      <a href="tel:+919602591005" style="color:var(--accent); text-decoration:none;">+91 9602591005</a>
+    </div>
+    <div>Priyanka Saini • M.Sc. (Hons.) Economics & Minor in Management • BITS Pilani</div>
+  </footer>
+
+  <div id="aiChatLauncher" style="position:fixed; bottom: 24px; left: 24px; z-index:1400;">
+    <button type="button" onclick="togglePortfolioChat()" class="btn btn-primary" style="border-radius:999px; box-shadow:0 10px 28px rgba(0,242,254,0.3);">
+      💬 Ask About Priyanka
+    </button>
+  </div>
+
+  <div id="aiChatBox" class="card" style="display:none; position:fixed; bottom:82px; left:24px; width:min(360px, calc(100vw - 48px)); z-index:1400; padding:1.1rem; border-color:var(--accent); box-shadow:0 16px 40px rgba(0,0,0,0.55);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem; padding-bottom:0.5rem; border-bottom:1px solid var(--border);">
+      <div>
+        <span class="section-tag" style="margin:0; font-size:0.72rem;">VERIFIED_PROFILE_ASSISTANT</span>
+        <strong style="font-size:0.92rem;">Ask About Experience, Skills & Research</strong>
+      </div>
+      <button type="button" onclick="togglePortfolioChat()" style="background:none; border:none; color:var(--muted); font-size:1.1rem; cursor:pointer;">✕</button>
+    </div>
+    <div id="aiChatLog" class="trace-box" style="height:190px; overflow-y:auto; margin:0 0 0.65rem; font-size:0.79rem;">
+      <div style="color:var(--accent);">Hi! Ask me about Priyanka's roles at National Australia Bank & Deutsche Bank, her BITS Pilani Economics & Management background, or her R/SQL/Python/Stata projects.</div>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:0.35rem; margin-bottom:0.6rem;">
+      <button type="button" class="term-chip" onclick="askPortfolioBot('What is Priyanka’s work experience?')">Experience?</button>
+      <button type="button" class="term-chip" onclick="askPortfolioBot('What technical tools and courses has she completed?')">Skills & Courses?</button>
+      <button type="button" class="term-chip" onclick="askPortfolioBot('How can I contact Priyanka?')">Contact Info?</button>
+    </div>
+    <form onsubmit="event.preventDefault(); const inp=document.getElementById('aiChatInput'); if(inp.value.trim()){ askPortfolioBot(inp.value.trim()); inp.value=''; }" style="display:flex; gap:0.4rem;">
+      <input type="text" id="aiChatInput" class="pg-input" style="margin:0; padding:0.5rem 0.7rem; font-size:0.8rem;" placeholder="Ask a question..." />
+      <button type="submit" class="btn btn-primary btn-sm">Ask</button>
+    </form>
+  </div>
+
+  <div id="cmdPaletteBackdrop" class="modal-backdrop" onclick="if(event.target.id==='cmdPaletteBackdrop') toggleCommandPalette()">
+    <div class="modal-box" style="max-width:540px; padding:1.35rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.65rem;">
+        <span class="section-tag" style="margin:0;">QUICK_COMMAND_PALETTE (CTRL+K / ESC)</span>
+        <button type="button" class="modal-close" style="position:static;" onclick="toggleCommandPalette()">✕</button>
+      </div>
+      <input type="text" id="cmdSearchInput" class="pg-input" placeholder="Type a command (e.g., LinkedIn, Resume, Labs, Blog, Email)..." oninput="filterCommands(this.value)" />
+      <div id="cmdList" style="display:flex; flex-direction:column; gap:0.4rem; max-height:260px; overflow-y:auto;"></div>
+    </div>
+  </div>
+  <div id="shapeTooltip"></div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

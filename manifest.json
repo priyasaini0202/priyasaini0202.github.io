@@ -1,0 +1,15 @@
+{
+  "name": "Priyanka Saini — Economics, Finance & Risk Analytics",
+  "short_name": "Priyanka Saini",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0b132b",
+  "theme_color": "#38bdf8",
+  "icons": [
+    {
+      "src": "assets/img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

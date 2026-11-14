@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Economics, Risk & Finance Labs | Priyanka Saini</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <canvas id="neural-canvas"></canvas>
+  <div id="toast"></div>
+
+  <nav>
+    <a href="index.html" class="logo">&lt;<span>Priyanka.EconFin</span>/&gt;</a>
+    <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Toggle Menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">🏠 Home</a>
+      <a href="tutoring.html">🎓 Mentoring</a>
+      <a href="labs.html" style="color:var(--accent);">📈 Econ Labs</a>
+      <a href="blog.html">📖 Blog</a>
+      <a href="capabilities.html">📄 Profile Deck</a>
+      <a href="index.html#contact" class="nav-cta">💬 Connect</a>
+      <button type="button" id="themeToggle" class="theme-btn" onclick="toggleTheme()">☀️ Light</button>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:2.5rem; padding-bottom:4rem;">
+    <span class="section-tag">INTERACTIVE_FINANCE_&_ECONOMETRIC_SANDBOXES</span>
+    <h1>Economics, Credit Risk & Derivatives Labs</h1>
+    <p style="color:var(--muted); max-width:740px; margin-bottom:2rem;">
+      Hands-on financial and econometric models built by <strong>Priyanka Saini</strong> (M.Sc. Hons. Economics & Minor in Management, BITS Pilani) — test corporate credit ratios, simulate energy policy shifts, and inspect derivatives payoffs.
+    </p>
+
+    <div class="grid-2" style="margin-bottom:2rem;">
+      <div class="card">
+        <span class="section-tag">LAB 01 • CREDIT UNDERWRITING</span>
+        <h3 style="margin-bottom:0.5rem;">Corporate Credit Risk & Financial Ratio Evaluator</h3>
+        <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.9rem;">Adjust leverage, liquidity, and interest coverage ratios to evaluate internal credit risk tiers.</p>
+
+        <label style="font-family:'Fira Code',monospace; font-size:0.78rem; color:var(--muted);">Debt-to-Equity Ratio (x):</label>
+        <input type="number" step="0.1" id="crDte" class="pg-input" value="1.2" oninput="runCreditRiskDemo()" />
+
+        <label style="font-family:'Fira Code',monospace; font-size:0.78rem; color:var(--muted);">Current Ratio (Liquidity x):</label>
+        <input type="number" step="0.1" id="crCurrent" class="pg-input" value="1.8" oninput="runCreditRiskDemo()" />
+
+        <label style="font-family:'Fira Code',monospace; font-size:0.78rem; color:var(--muted);">Interest Coverage Ratio (EBIT / Interest x):</label>
+        <input type="number" step="0.1" id="crIcr" class="pg-input" value="4.5" oninput="runCreditRiskDemo()" />
+
+        <div id="creditRiskOutput" class="trace-box"></div>
+      </div>
+
+      <div class="card">
+        <span class="section-tag">LAB 02 • MARKET ECONOMETRICS</span>
+        <h3 style="margin-bottom:0.5rem;">Energy Policy Levy & Equilibrium Visualizer</h3>
+        <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">Simulate how regulatory carbon/energy levies shift market supply curves, equilibrium price, and deadweight loss.</p>
+
+        <label style="font-family:'Fira Code',monospace; font-size:0.78rem; color:var(--muted);">Regulatory Policy Levy ($/unit):</label>
+        <input type="range" id="policyTaxSlider" min="0" max="40" value="12" style="width:100%; margin:0.5rem 0;" oninput="updateEconPolicyViz()" />
+        <div id="econPolicyReadout" class="trace-box"></div>
+        <canvas id="econPolicyCanvas" class="math-canvas"></canvas>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:2rem;">
+      <div class="card">
+        <span class="section-tag">LAB 03 • DERIVATIVES & RISK MANAGEMENT</span>
+        <h3 style="margin-bottom:0.5rem;">Long Call Option Payoff & Breakeven Simulator</h3>
+        <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">Explore asymmetric payoff profiles by adjusting Strike Price ($K$) and Option Premium.</p>
+
+        <label style="font-family:'Fira Code',monospace; font-size:0.78rem; color:var(--muted);">Strike Price K ($):</label>
+        <input type="range" id="strikeSlider" min="70" max="130" value="100" style="width:100%; margin:0.35rem 0;" oninput="updateOptionViz()" />
+
+        <label style="font-family:'Fira Code',monospace; font-size:0.78rem; color:var(--muted);">Option Premium ($):</label>
+        <input type="range" id="premSlider" min="2" max="20" value="8" style="width:100%; margin:0.35rem 0;" oninput="updateOptionViz()" />
+
+        <div id="optionReadout" class="trace-box"></div>
+        <canvas id="optionCanvas" class="math-canvas"></canvas>
+      </div>
+
+      <div class="card">
+        <span class="section-tag">LAB 04 • DIAGNOSTIC CHALLENGE</span>
+        <h3 style="margin-bottom:0.5rem;">Spot the Econometric Modeling Flaw</h3>
+        <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">Compare two analytical approaches evaluating multi-country energy policies over 15 years. Which memo contains a specification error?</p>
+
+        <div class="trace-box">
+          <strong>Memo A:</strong> Regresses national energy prices directly on policy dummy variables using pooled OLS without country fixed effects or unit-root stationarity checks.<br/><br/>
+          <strong>Memo B:</strong> Runs Augmented Dickey-Fuller stationarity tests, applies first-differences where needed, and includes country & year fixed effects.
+        </div>
+
+        <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
+          <button type="button" class="btn btn-primary btn-sm" onclick="evaluateTrace('A')">Flag Memo A as Flawed</button>
+          <button type="button" class="btn btn-glass btn-sm" onclick="evaluateTrace('B')">Flag Memo B as Flawed</button>
+        </div>
+        <div id="reasoningVerdict" class="verdict-box"></div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <span class="section-tag">ECONOMETRIC SPECIFICATION FIT</span>
+        <h3 style="margin-bottom:0.75rem;">Panel Data Model Comparison (Adjusted R²)</h3>
+        <div style="height:220px;"><canvas id="tsChart"></canvas></div>
+      </div>
+      <div class="card">
+        <span class="section-tag">BANKING & RISK GOVERNANCE</span>
+        <h3 style="margin-bottom:0.75rem;">Credit & Documentation QC Checkpoints</h3>
+        <div style="height:220px;"><canvas id="nlpChart"></canvas></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>Priyanka Saini • Economics, Finance & Risk Analytics • <a href="index.html" style="color:var(--accent);">Back to Home</a></footer>
+  <div id="shapeTooltip"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

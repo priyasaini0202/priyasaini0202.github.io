@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Priyanka Saini — Economics, Finance &amp; Risk Analytics Blog</title>
+    <link>https://priyankasaini.github.io/blog.html</link>
+    <description>Articles on credit risk, banking operations, econometrics, and corporate finance.</description>
+    <item>
+      <title><![CDATA[Evaluating Corporate Leverage Ratios, Covenant Triggers & Counterparty Stress Testing]]></title>
+      <link>https://priyankasaini.github.io/blog.html#post-001</link>
+      <guid>https://priyankasaini.github.io/blog.html#post-001</guid>
+      <pubDate>Sat, 14 Nov 2026 10:29:49 +0000</pubDate>
+      <description><![CDATA[A practical banking risk framework for evaluating corporate leverage, liquidity buffers, and counterparty exposure under macroeconomic volatility.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Panel Data Regression & Policy Evaluation: Overcoming Omitted Variable Bias]]></title>
+      <link>https://priyankasaini.github.io/blog.html#post-002</link>
+      <guid>https://priyankasaini.github.io/blog.html#post-002</guid>
+      <pubDate>Sat, 14 Nov 2026 10:29:49 +0000</pubDate>
+      <description><![CDATA[How fixed-effects panel estimation and stationarity testing in R and Stata isolate true economic policy impacts from macro time trends.]]></description>
+    </item>
+  </channel>
+</rss>

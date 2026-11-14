@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1-on-1 Economics, Accounting & Data Tools Mentoring | Priyanka Saini (BITS Pilani)</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <canvas id="neural-canvas"></canvas>
+  <div id="toast"></div>
+
+  <nav>
+    <a href="index.html" class="logo">&lt;<span>Priyanka.EconFin</span>/&gt;</a>
+    <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Toggle Menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">🏠 Home</a>
+      <a href="tutoring.html" style="color:var(--accent);">🎓 Mentoring</a>
+      <a href="labs.html">📈 Econ Labs</a>
+      <a href="blog.html">📖 Blog</a>
+      <a href="capabilities.html">📄 Profile Deck</a>
+      <a href="index.html#contact" class="nav-cta">💬 Connect</a>
+      <button type="button" id="themeToggle" class="theme-btn" onclick="toggleTheme()">☀️ Light</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <div>
+        <div class="status-pill"><span class="pulse-dot"></span><span>WILP LEARNING FACILITATOR • 150+ STUDENTS MENTORED</span></div>
+        <h1>1-on-1 <span class="gradient-text">Economics, Finance & Data</span> Mentoring</h1>
+        <p class="hero-desc">
+          Hi learners! I'm <strong>Priyanka Saini</strong>, an <strong>M.Sc. (Hons.) Economics & Management graduate from BITS Pilani</strong> and <strong>WILP Learning Facilitator</strong>. I help high-school, undergraduate, and working learners master Economics, Managerial Accounting, Corporate Finance, and Excel/SQL/R/Stata.
+        </p>
+        <div class="cta-group">
+          <a href="#fee-planner" class="btn btn-primary">🎓 Plan Your 1-on-1 Sessions ↓</a>
+          <a href="https://in.linkedin.com/in/priyanka-saini-2b8219195" target="_blank" rel="noopener" class="btn btn-glass">💼 Connect on LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-showcase">
+          <div class="avatar-ring"><img src="IMG_Priyanka_Saini.jpg" alt="Priyanka Saini — Economics & Finance Mentor" /></div>
+          <div>
+            <h3>Priyanka Saini</h3>
+            <span class="uni-badge">🎓 M.Sc. (Hons.) Economics & Minor in Management, BITS Pilani</span>
+            <span class="loc-text">📚 WILP Learning Facilitator • Nirmaan & ACC Mentor</span>
+          </div>
+        </div>
+        <div class="card">
+          <span class="section-tag">TEACHING & MENTORING APPROACH</span>
+          <ul class="item-list" style="margin-top:0.35rem;">
+            <li><strong>Intuition Before Formulas:</strong> Real-world banking and policy examples bring economic theory and accounting to life.</li>
+            <li><strong>Hands-On Tool Practice:</strong> Learn data analysis directly in Excel, SQL, R Programming, and Stata.</li>
+            <li><strong>Exam & Career Guidance:</strong> Proven track record mentoring 150+ students through Nirmaan, ACC, and WILP.</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section id="timezones">
+      <span class="section-tag">FLEXIBLE_SCHEDULING</span>
+      <h2>Available Session Windows</h2>
+      <div class="card">
+        <div class="filter-bar">
+          <button type="button" class="filter-btn active" onclick="showTutorTimezone('in', this)">🇮🇳 India (IST)</button>
+          <button type="button" class="filter-btn" onclick="showTutorTimezone('apac', this)">🇦🇺 Australia & Singapore (AEST / SGT)</button>
+          <button type="button" class="filter-btn" onclick="showTutorTimezone('uk', this)">🇬🇧 UK & Europe (GMT / CET)</button>
+          <button type="button" class="filter-btn" onclick="showTutorTimezone('us', this)">🇺🇸 US & Canada (EST)</button>
+        </div>
+        <div id="tzDisplay" class="trace-box" style="margin:0;">
+          <strong>🇮🇳 India Slots (IST):</strong><br/>
+          • Weekdays (Mon–Fri): <strong>6:30 PM – 9:30 PM IST</strong><br/>
+          • Weekends (Sat–Sun): <strong>10:00 AM – 6:00 PM IST</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="fee-planner">
+      <span class="section-tag">SESSION_PLANNER</span>
+      <h2>1-on-1 Mentoring Fee & Free Trial Planner</h2>
+      <div class="card" style="border-color:var(--accent-green);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.85rem;">
+          <h3 style="margin:0;">Calculate Hourly or Monthly Package</h3>
+          <div style="display:flex; gap:0.4rem;">
+            <button type="button" class="filter-btn active" id="tutInrBtn" onclick="setTutorCurrency('INR')">INR (₹)</button>
+            <button type="button" class="filter-btn" id="tutUsdBtn" onclick="setTutorCurrency('USD')">USD ($)</button>
+          </div>
+        </div>
+
+        <div class="grid-2" style="align-items:start;">
+          <div>
+            <label style="display:block; font-family:'Fira Code',monospace; font-size:0.8rem; color:var(--muted); margin-bottom:0.35rem;">1. Select Learning Level:</label>
+            <select id="tutGrade" class="pg-input" onchange="updateTutorEstimate()">
+              <option value="school">Senior Secondary Economics & Commerce (Classes 11–12)</option>
+              <option value="ug" selected>Undergraduate Economics, Finance & Statistics</option>
+              <option value="wilp">Managerial Accounting, Corporate Finance & Econometrics</option>
+              <option value="tools">Applied Excel, SQL, R Programming & Stata Workshop</option>
+            </select>
+            <label style="display:block; font-family:'Fira Code',monospace; font-size:0.8rem; color:var(--muted); margin:0.4rem 0;">2. Focus Subjects:</label>
+            <div style="display:flex; flex-wrap:wrap; gap:0.85rem; font-size:0.88rem; color:var(--text);">
+              <label style="cursor:pointer;"><input type="checkbox" id="subMath" checked onchange="updateTutorEstimate()" /> Economics & Econometrics</label>
+              <label style="cursor:pointer;"><input type="checkbox" id="subSci" onchange="updateTutorEstimate()" /> Accounting & Finance</label>
+              <label style="cursor:pointer;"><input type="checkbox" id="subEng" onchange="updateTutorEstimate()" /> Excel / SQL / R / Stata</label>
+            </div>
+          </div>
+
+          <div class="trace-box" style="margin:0;">
+            <div style="color:var(--muted); font-size:0.78rem;">ESTIMATED 1-ON-1 MENTORING RATE</div>
+            <div id="tutRateDisplay" style="font-size:1.45rem; font-weight:800; color:var(--accent-green); margin:0.3rem 0;">₹1,000 – ₹1,500 / hour</div>
+            <div id="tutPackDisplay" style="font-size:0.84rem; color:var(--accent); margin-bottom:0.45rem;">Monthly 8-Session Pack: ₹7,200 – ₹10,800 (Save 10%)</div>
+            <div style="font-size:0.8rem; color:var(--muted); margin-bottom:0.8rem;">First 20-minute introductory session is free. Reach out via email or phone to book your slot.</div>
+            <a href="mailto:priyasaini202004@gmail.com?subject=Free%2020-Min%20Mentoring%20Trial%20Session" class="btn btn-primary btn-sm">Email to Book Free Trial ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div>Priyanka Saini • M.Sc. (Hons.) Economics & Minor in Management, BITS Pilani • priyasaini202004@gmail.com • +91 9602591005</div>
+  </footer>
+  <div id="shapeTooltip"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

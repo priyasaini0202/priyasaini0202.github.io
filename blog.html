@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Economics, Credit Risk & Financial Analytics Blog | Priyanka Saini</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <meta name="description" content="Articles and research notes on Credit Risk, Banking Operations, Applied Econometrics, Corporate Finance, and Public Policy by Priyanka Saini (BITS Pilani)." />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <canvas id="neural-canvas"></canvas>
+  <div id="toast"></div>
+
+  <nav>
+    <a href="index.html" class="logo">&lt;<span>Priyanka.EconFin</span>/&gt;</a>
+    <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Toggle Menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">🏠 Home</a>
+      <a href="tutoring.html">🎓 Mentoring</a>
+      <a href="labs.html">📈 Econ Labs</a>
+      <a href="blog.html" style="color:var(--accent);">📖 Blog</a>
+      <a href="capabilities.html">📄 Profile Deck</a>
+      <a href="index.html#contact" class="nav-cta">💬 Connect</a>
+      <button type="button" id="themeToggle" class="theme-btn" onclick="toggleTheme()">☀️ Light</button>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:3rem; padding-bottom:4rem; max-width:900px;">
+    <span class="section-tag">// ECONOMICS_FINANCE_&_RISK_NOTES</span>
+    <h1>Economics, Risk & Financial Analytics Blog</h1>
+    <p class="hero-desc">Analytical notes on credit risk, trade lifecycle governance, panel econometrics, and corporate finance by Priyanka Saini (BITS Pilani).</p>
+
+    <input type="text" id="blogSearch" class="pg-input" placeholder="Search articles by keyword (e.g., Credit Risk, Panel Data, SQL, Banking)..." oninput="renderBlogArchive(window.curTopic || 'all', this.value)" />
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="window.curTopic='all'; setActive(this); renderBlogArchive('all', document.getElementById('blogSearch').value)">All Topics</button>
+      <button class="filter-btn" onclick="window.curTopic='risk'; setActive(this); renderBlogArchive('risk', document.getElementById('blogSearch').value)">Credit Risk</button>
+      <button class="filter-btn" onclick="window.curTopic='econometrics'; setActive(this); renderBlogArchive('econometrics', document.getElementById('blogSearch').value)">Econometrics</button>
+      <button class="filter-btn" onclick="window.curTopic='banking'; setActive(this); renderBlogArchive('banking', document.getElementById('blogSearch').value)">Banking Ops</button>
+      <button class="filter-btn" onclick="window.curTopic='finance'; setActive(this); renderBlogArchive('finance', document.getElementById('blogSearch').value)">Corporate Finance</button>
+      <button class="filter-btn" onclick="window.curTopic='policy'; setActive(this); renderBlogArchive('policy', document.getElementById('blogSearch').value)">Public Policy & ESG</button>
+    </div>
+
+    <div class="card" style="margin-bottom:1.75rem; padding:1.1rem 1.4rem;">
+      <span class="section-tag" style="margin-bottom:0.4rem;">QUICK_JUMP_INDEX</span>
+      <div id="blog-toc"></div>
+    </div>
+
+    <div id="all-blogs-list"></div>
+  </main>
+
+  <footer>© 2026 PRIYANKA SAINI • ECONOMICS, FINANCE & RISK ANALYTICS BLOG</footer>
+  <div id="shapeTooltip"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

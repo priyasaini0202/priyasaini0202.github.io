@@ -1,0 +1,66 @@
+[
+  {
+    "id": "energy-policy",
+    "cat": "econ",
+    "title": "Analyzing Impact of Energy Policies in the Market",
+    "badge": "Econometrics \u2022 R & Excel",
+    "summary": "Evaluated global policy effectiveness applying time-series and panel data econometric techniques in R and Excel to measure price elasticity and market distortions.",
+    "tags": [
+      "R Programming",
+      "Panel Data",
+      "Time-Series",
+      "Excel"
+    ],
+    "repo": "https://in.linkedin.com/in/priyanka-saini-2b8219195",
+    "arch": "Multi-Country Energy Dataset -> ADF Unit Root Tests -> Panel Regression (Fixed/Random Effects) -> Policy Elasticity Estimation",
+    "details": "Conducted empirical evaluation of global energy policies using advanced panel data methods, assessing regulatory impact on market equilibrium and deadweight loss."
+  },
+  {
+    "id": "gvc-sustainability",
+    "cat": "finance",
+    "title": "Analyzing Sustainability in Global Value Chains",
+    "badge": "Global Trade & ESG",
+    "summary": "Examined global value chain metrics to map sustainability risks, carbon footprints, and production efficiencies across cross-border manufacturing networks.",
+    "tags": [
+      "Global Value Chains",
+      "ESG Risk",
+      "Trade Analytics",
+      "Data Visualization"
+    ],
+    "repo": "https://in.linkedin.com/in/priyanka-saini-2b8219195",
+    "arch": "Cross-Border Trade Data -> Value Added Decomposition -> ESG Risk Scoring -> Supply Chain Efficiency Mapping",
+    "details": "Mapped multi-tier production networks and quantified sustainability vulnerabilities to inform strategic risk mitigation in international trade."
+  },
+  {
+    "id": "egovernance",
+    "cat": "policy",
+    "title": "The Perceived Effectiveness of E-Governance",
+    "badge": "Public Policy & Analytics",
+    "summary": "Evaluated the impact of digital governance initiatives on citizen satisfaction, administrative transparency, and public service delivery.",
+    "tags": [
+      "Survey Analytics",
+      "Public Policy",
+      "Statistical Evaluation",
+      "Presentation"
+    ],
+    "repo": "https://in.linkedin.com/in/priyanka-saini-2b8219195",
+    "arch": "Citizen Survey Data -> Data Cleaning & Coding -> Statistical Hypothesis Testing -> Impact Evaluation Report",
+    "details": "Analyzed administrative datasets and citizen feedback surveys to measure the efficiency gains of digital public service platforms."
+  },
+  {
+    "id": "skill-education",
+    "cat": "econ",
+    "title": "Role of Skill-Based Education and Employment",
+    "badge": "Labor Economics",
+    "summary": "Studied the impact of vocational education programs on improving student employability, wage premiums, and labor market integration.",
+    "tags": [
+      "Labor Economics",
+      "Impact Assessment",
+      "Stata",
+      "Regression Analysis"
+    ],
+    "repo": "https://in.linkedin.com/in/priyanka-saini-2b8219195",
+    "arch": "Employment Census Data -> Matching Estimators -> Wage Premium Regression -> Labor Market Insights",
+    "details": "Investigated the causal effect of vocational training interventions on youth employment outcomes and skill mismatch reduction."
+  }
+]

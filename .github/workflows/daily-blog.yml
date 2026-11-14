@@ -1,0 +1,33 @@
+name: Daily Economics & Finance Blog Sync
+
+on:
+  schedule:
+    - cron: '23 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate new article & update feeds
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/generate_daily_blog.py
+
+      - name: Commit and push updated data & feeds
+        run: |
+          git config user.name "Priyanka Saini"
+          git config user.email "priyasaini202004@gmail.com"
+          git add data/posts.json sitemap.xml rss.xml
+          git diff --staged --quiet || (git commit -m "chore(blog): publish economics & finance article" && git push)
