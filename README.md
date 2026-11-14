@@ -6,7 +6,7 @@
 
 Welcome to the official repository for my professional portfolio and interactive analytics workspace. Designed with a decoupled architecture, this site showcases my academic background in Economics and Management from **BITS Pilani**, professional experience at **National Australia Bank** and **Deutsche Bank**, and empirical research projects.
 
-🔗 **Live Website:** [https://priyankasaini0202.github.io](https://priyankasaini0202.github.io)
+🔗 **Live Website:** https://priyasaini0202.github.io/
 
 ---
 
