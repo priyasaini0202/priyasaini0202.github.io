@@ -5,17 +5,24 @@
     <link>https://priyankasaini.github.io/blog.html</link>
     <description>Articles on credit risk, banking operations, econometrics, and corporate finance.</description>
     <item>
+      <title><![CDATA[Applied Zero-Defect Trade Settlement Controls & Regulatory Quality Checks: Analytical Frameworks & Governance (#3)]]></title>
+      <link>https://priyankasaini.github.io/blog.html#post-003</link>
+      <guid>https://priyankasaini.github.io/blog.html#post-003</guid>
+      <pubDate>Sun, 15 Nov 2026 04:18:10 +0000</pubDate>
+      <description><![CDATA[A structured breakdown of zero-defect trade settlement controls & regulatory quality checks for institutional finance and economic decision-making, combining quantitative rigor with audit-ready governance.]]></description>
+    </item>
+    <item>
       <title><![CDATA[Evaluating Corporate Leverage Ratios, Covenant Triggers & Counterparty Stress Testing]]></title>
       <link>https://priyankasaini.github.io/blog.html#post-001</link>
       <guid>https://priyankasaini.github.io/blog.html#post-001</guid>
-      <pubDate>Sat, 14 Nov 2026 10:29:49 +0000</pubDate>
+      <pubDate>Sun, 15 Nov 2026 04:18:10 +0000</pubDate>
       <description><![CDATA[A practical banking risk framework for evaluating corporate leverage, liquidity buffers, and counterparty exposure under macroeconomic volatility.]]></description>
     </item>
     <item>
       <title><![CDATA[Panel Data Regression & Policy Evaluation: Overcoming Omitted Variable Bias]]></title>
       <link>https://priyankasaini.github.io/blog.html#post-002</link>
       <guid>https://priyankasaini.github.io/blog.html#post-002</guid>
-      <pubDate>Sat, 14 Nov 2026 10:29:49 +0000</pubDate>
+      <pubDate>Sun, 15 Nov 2026 04:18:10 +0000</pubDate>
       <description><![CDATA[How fixed-effects panel estimation and stationarity testing in R and Stata isolate true economic policy impacts from macro time trends.]]></description>
     </item>
   </channel>
