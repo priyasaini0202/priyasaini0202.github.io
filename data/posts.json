@@ -1,5 +1,30 @@
 [
   {
+    "id": "post-007",
+    "date": "2026-11-19",
+    "topic": "econometrics",
+    "topic_label": "Applied Econometrics",
+    "read_time": "5 MIN READ",
+    "title": "Applied Fixed-Effects Panel Regression, Unit Root Diagnostics & Policy Elasticity: Analytical Frameworks & Governance (#7)",
+    "summary": "A structured breakdown of fixed-effects panel regression, unit root diagnostics & policy elasticity for institutional finance and economic decision-making, combining quantitative rigor with audit-ready governance.",
+    "architecture_flow": "Raw Financial Data -> Ratio & Econometric Diagnostics -> Risk & QC Gate -> Executive Decision",
+    "sections": [
+      {
+        "heading": "Why Empirical Rigor Matters in Financial Decisions",
+        "body": "Applying fixed-effects panel regression, unit root diagnostics & policy elasticity ensures macro volatility and structural shifts are captured before capital or credit limits are committed."
+      },
+      {
+        "heading": "Quality Checks & Audit-Ready Documentation",
+        "body": "Every quantitative output should pass standardized reconciliation and compliance checks to eliminate operational errors."
+      },
+      {
+        "heading": "Translating Metrics into Executive Action",
+        "body": "Clear variance attribution and sensitivity ranges enable stakeholders to act decisively under uncertainty."
+      }
+    ],
+    "takeaway": "Combining quantitative economics with disciplined risk governance elevates Applied Econometrics into dependable decision support."
+  },
+  {
     "id": "post-006",
     "date": "2026-11-18",
     "topic": "risk",
