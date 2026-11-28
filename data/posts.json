@@ -1,5 +1,30 @@
 [
   {
+    "id": "post-016",
+    "date": "2026-11-28",
+    "topic": "risk",
+    "topic_label": "Credit & Financial Risk",
+    "read_time": "5 MIN READ",
+    "title": "Applied Corporate Leverage Ratios, Covenant Triggers & Counterparty Stress Testing: Analytical Frameworks & Governance (#16)",
+    "summary": "A structured breakdown of corporate leverage ratios, covenant triggers & counterparty stress testing for institutional finance and economic decision-making, combining quantitative rigor with audit-ready governance.",
+    "architecture_flow": "Raw Financial Data -> Ratio & Econometric Diagnostics -> Risk & QC Gate -> Executive Decision",
+    "sections": [
+      {
+        "heading": "Why Empirical Rigor Matters in Financial Decisions",
+        "body": "Applying corporate leverage ratios, covenant triggers & counterparty stress testing ensures macro volatility and structural shifts are captured before capital or credit limits are committed."
+      },
+      {
+        "heading": "Quality Checks & Audit-Ready Documentation",
+        "body": "Every quantitative output should pass standardized reconciliation and compliance checks to eliminate operational errors."
+      },
+      {
+        "heading": "Translating Metrics into Executive Action",
+        "body": "Clear variance attribution and sensitivity ranges enable stakeholders to act decisively under uncertainty."
+      }
+    ],
+    "takeaway": "Combining quantitative economics with disciplined risk governance elevates Credit & Financial Risk into dependable decision support."
+  },
+  {
     "id": "post-015",
     "date": "2026-11-27",
     "topic": "policy",
